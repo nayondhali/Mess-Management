@@ -397,8 +397,8 @@ void generate_report() {
     int report_choice;
     do {
         printf("\n--- Reports ---\n");
-        printf("1. যতটুকু আছে ততটুকু রিপোর্ট\n");
-        printf("2. পুরো মাসের রিপোর্ট\n");
+        printf("1. Partial Report (Current Data)\n");
+        printf("2. Full Monthly Report\n");
         printf("3. Back\n");
         printf("Enter your choice: ");
         scanf("%d", &report_choice);
@@ -421,7 +421,7 @@ void partial_report() {
 
 void full_report() {
     printf("\nFull Monthly Report:\n");
-    // এখানে আপনি মাস ভিত্তিক হিসাব করতে পারবেন (Future Enhancement)
+    // Here you can implement month-based calculations (Future Enhancement)
     display_dashboard();
     show_all_members();
     show_balance();
